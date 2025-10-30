@@ -36,14 +36,8 @@
             @RenderBody()
         </main>
     </div>
-
-  <footer class="border-top footer text-center py-3" >
-    <div class="container-fluid px-3">
-        <p class="mb-0 small text-white text-wrap">
-            &copy; @DateTime.Now.Year — <strong>PortFolio Julio Guido |</strong> Todos los derechos reservados.
-        </p>
-    </div>
-</footer>
+<footer class="border-top footer text-muted py-3"> <div class="container text-center"> <p class="mb-0 text-white"> &copy; @DateTime.Now.Year — <strong>PortFolio Julio Guido |</strong> </p> </div> </footer>
+ 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -52,3 +46,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
