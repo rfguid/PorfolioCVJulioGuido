@@ -1,0 +1,134 @@
+@page
+@model PortifolioGuiDo.Pages.Projects.ProjectJGModel
+@{
+    ViewData["Title"] = "Projects";
+}
+<!-- Banner principal (Carousel con overlay) -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active position-relative">
+            <img src="/img/banner1.jpg" class="d-block w-100" alt="Banner 1" style="object-fit: cover; height: 500px;">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="fw-bold text-white">Bienvenido a mi portafolio</h2>
+                <p>Desarrollador .NET | Administrador de Sistemas | Soluciones en la Nube</p>
+            </div>
+        </div>
+
+        <div class="carousel-item position-relative">
+            <img src="/img/banner2.jpg" class="d-block w-100" alt="Banner 2" style="object-fit: cover; height: 500px;">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="fw-bold text-white">Transformando ideas en código</h2>
+                <p>ASP.NET, Nextcloud, Office 365, Cloudflare y más</p>
+            </div>
+        </div>
+
+        <div class="carousel-item position-relative">
+            <img src="/img/banner3.jpg" class="d-block w-100" alt="Banner 3" style="object-fit: cover; height: 500px;">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="fw-bold text-white">Optimizo tu infraestructura IT</h2>
+                <p>Infraestructura, seguridad y productividad empresarial</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+<br />
+<br />
+
+
+
+<section class="text-white text-center py-5" style="background: linear-gradient(135deg, #007bff, #6610f2);">
+    <div class="container">
+       <h2 class="mb-4 text-center">Proyectos destacados</h2>
+    </div>
+</section>
+
+
+
+<div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Sistema de Salida de Equipos</h5>
+                    <p class="card-text">Aplicación interna desarrollada en .NET Core para la gestión de equipos desarrollado en Razor Page con Entity Framework (SQL Server) y desplegada en IIS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Intranet en SharePoint</h5>
+                    <p class="card-text">Implementación de una intranet corporativa con SharePoint con Microsoft 365.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Infraestructura Nextcloud</h5>
+                    <p class="card-text">Despliegue de una nube privada integrada con Cloudflare.</p>
+                </div>
+            </div>
+        </div>
+
+             <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Tienda en Linea</h5>
+                    <p class="card-text">Despliegue de una tienda en linea desarrollada en wordpress con WooCommerce.</p>
+                </div>
+            </div>
+        </div>
+
+       <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Actualización pagina Web </h5>
+                    <p class="card-text">Desarrollo y despliegue de pagina web principal de la empresa en Wordpress con elementor< </p>
+                </div>
+            </div>
+        </div>
+
+
+       <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Migración de Infraestructura Completa </h5>
+                    <p class="card-text">Se realiza Migración de Infraestructura IT de la empresa en distintos lugares </p>
+                  
+                </div>
+            </div>
+        </div>
+
+       <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Migración Correos </h5>
+                    <p class="card-text">Se realiza Migración de correos de Godaddy to office 365 </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
